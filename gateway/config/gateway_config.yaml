@@ -1,0 +1,158 @@
+# =====================================================
+# USB SECURITY GATEWAY CONFIGURATION
+# =====================================================
+
+system:
+  name: USB Security Gateway
+  version: 1.0
+  environment: production
+
+# -----------------------------------------------------
+# LOGGING CONFIGURATION
+# -----------------------------------------------------
+logging:
+  gateway_log: logs/gateway.log
+  security_log: logs/security_alerts.log
+  log_level: INFO
+
+# -----------------------------------------------------
+# DATABASE CONFIGURATION
+# -----------------------------------------------------
+database:
+  engine: sqlite
+  path: gateway/database/device_logs.db
+
+# -----------------------------------------------------
+# USB MONITOR SETTINGS
+# -----------------------------------------------------
+usb_monitor:
+
+  # Monitor these subsystems
+  subsystems:
+    - usb
+    - block
+
+  # Ignore internal USB devices
+  ignore_internal_devices: true
+
+  # Device polling timeout (seconds)
+  monitor_timeout: 5
+
+# -----------------------------------------------------
+# DEVICE SECURITY POLICY
+# -----------------------------------------------------
+security_policy:
+
+  # Allow trusted vendor IDs
+  trusted_vendors:
+    - 046d   # Logitech
+    - 0781   # SanDisk
+    - 0951   # Kingston
+
+  # Block unknown devices automatically
+  block_unknown_devices: false
+
+  # Require serial numbers for validation
+  require_serial_number: true
+
+  # Maximum USB interfaces allowed
+  max_interfaces: 4
+
+# -----------------------------------------------------
+# DEVICE FINGERPRINTING SETTINGS
+# -----------------------------------------------------
+fingerprinting:
+
+  enable_device_hash: true
+
+  hash_algorithm: sha256
+
+  store_profiles: true
+
+# -----------------------------------------------------
+# DEVICE BLOCKING SETTINGS
+# -----------------------------------------------------
+blocking:
+
+  enable_driver_unbind: true
+
+  enable_port_disable: true
+
+  auto_block_suspicious: true
+
+# -----------------------------------------------------
+# SANDBOX SETTINGS
+# -----------------------------------------------------
+sandbox:
+
+  enabled: true
+
+  mount_path: /sandbox/usb_mount
+
+  # Mount flags to prevent execution
+  mount_options:
+    - ro
+    - nosuid
+    - nodev
+    - noexec
+
+# -----------------------------------------------------
+# MALWARE SCAN SETTINGS
+# -----------------------------------------------------
+malware_scan:
+
+  enable_clamav: true
+
+  enable_yara: true
+
+  clamav_binary: /usr/bin/clamscan
+
+  yara_binary: /usr/bin/yara
+
+  yara_rules_path: sandbox/yara_rules
+
+# -----------------------------------------------------
+# API SERVER SETTINGS
+# -----------------------------------------------------
+api_server:
+
+  enabled: true
+
+  host: 0.0.0.0
+
+  port: 5000
+
+  debug: false
+
+# -----------------------------------------------------
+# WINDOWS DASHBOARD SETTINGS
+# -----------------------------------------------------
+dashboard:
+
+  enabled: true
+
+  refresh_interval: 5
+
+# -----------------------------------------------------
+# ALERT SETTINGS
+# -----------------------------------------------------
+alerts:
+
+  enable_alerts: true
+
+  alert_on_suspicious_device: true
+
+  alert_on_malware_detected: true
+
+  alert_on_device_blocked: true
+
+# -----------------------------------------------------
+# PERFORMANCE SETTINGS
+# -----------------------------------------------------
+performance:
+
+  device_processing_threads: 2
+
+  database_write_queue: true
+
+  cache_device_profiles: true

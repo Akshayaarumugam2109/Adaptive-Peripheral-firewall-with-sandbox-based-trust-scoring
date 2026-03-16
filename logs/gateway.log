@@ -1,0 +1,575 @@
+2026-03-08 00:31:23,457 [INFO] USB-Gateway : Gateway started
+2026-03-08 00:31:23,457 [INFO] Gateway started
+2026-03-08 00:31:23,495 [INFO] Database initialized successfully
+2026-03-08 00:31:23,495 [INFO] Starting USB monitor
+2026-03-08 00:31:23,498 [INFO] USB monitor running
+2026-03-08 00:32:05,445 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 00:32:05,445 [INFO] Gateway shutdown
+2026-03-08 01:07:17,849 [INFO] USB-Gateway : Gateway started
+2026-03-08 01:07:17,849 [INFO] Gateway started
+2026-03-08 01:07:17,851 [INFO] Database initialized successfully
+2026-03-08 01:07:17,851 [INFO] Initializing USB monitor
+2026-03-08 01:07:17,853 [INFO] USB monitor started and waiting for devices
+2026-03-08 01:07:37,382 [ERROR] USB event processing failed: 'tuple' object has no attribute 'action'
+2026-03-08 01:07:37,481 [ERROR] USB event processing failed: 'tuple' object has no attribute 'action'
+2026-03-08 01:07:37,525 [ERROR] USB event processing failed: 'tuple' object has no attribute 'action'
+2026-03-08 01:07:38,412 [ERROR] USB event processing failed: 'tuple' object has no attribute 'action'
+2026-03-08 01:15:00,167 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 01:15:00,167 [INFO] Gateway shutdown
+2026-03-08 01:23:38,673 [INFO] USB-Gateway : Gateway started
+2026-03-08 01:23:38,673 [INFO] Gateway started
+2026-03-08 01:23:38,675 [INFO] Database initialized successfully
+2026-03-08 01:23:38,675 [INFO] Starting USB monitor
+2026-03-08 01:23:38,677 [INFO] USB monitor waiting for devices...
+2026-03-08 01:23:40,895 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,903 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,911 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,923 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,926 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,931 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:40,934 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:45,582 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:45,597 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:45,620 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:45,639 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:46,660 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:46,746 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:46,784 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:23:47,692 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,392 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,393 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,401 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,417 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,422 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,426 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:36,428 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:50,379 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:50,396 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:50,411 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:50,424 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:51,445 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:51,545 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:51,616 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:24:52,805 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,615 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,621 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,633 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,655 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,660 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,667 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:20,671 [ERROR] USB event processing error: 'tuple' object has no attribute 'action'
+2026-03-08 01:26:54,670 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 01:26:54,670 [INFO] Gateway shutdown
+2026-03-08 01:33:06,021 [INFO] USB-Gateway : Gateway started
+2026-03-08 01:33:06,021 [INFO] Gateway started
+2026-03-08 01:33:06,023 [INFO] Database initialized successfully
+2026-03-08 01:33:06,023 [INFO] Starting USB monitor
+2026-03-08 01:33:06,026 [INFO] USB monitor started
+2026-03-08 01:33:14,188 [INFO] USB device detected: /dev/sda
+2026-03-08 01:33:14,188 [INFO] USB-Gateway : USB event triggered for /dev/sda
+2026-03-08 01:33:14,188 [INFO] USB event triggered for /dev/sda
+2026-03-08 01:33:14,188 [INFO] USB-Gateway : Processing device: /dev/sda
+2026-03-08 01:33:14,188 [INFO] Processing device: /dev/sda
+2026-03-08 01:33:14,189 [INFO] Starting enumeration for /dev/sda
+2026-03-08 01:33:14,246 [INFO] Enumeration complete: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '009'}
+2026-03-08 01:33:14,261 [INFO] Device stored in database
+2026-03-08 01:33:14,455 [INFO] Driver unbound for USB device 1-1
+2026-03-08 01:33:14,485 [ERROR] Failed to retrieve udev path
+2026-03-08 01:33:14,485 [ERROR] USB ID not found
+2026-03-08 01:33:14,485 [INFO] Extracting metadata for /dev/sda
+2026-03-08 01:33:14,526 [ERROR] Command failed: udevadm info --query=property --name /dev/sda
+2026-03-08 01:33:14,526 [ERROR] Unknown device "/dev/sda": No such device
+
+2026-03-08 01:33:14,526 [ERROR] udevadm returned no output
+2026-03-08 01:33:14,526 [INFO] Reading sysfs for /dev/sda
+2026-03-08 01:33:14,554 [ERROR] Unable to determine sysfs path
+2026-03-08 01:33:14,554 [INFO] Starting device classification
+2026-03-08 01:33:14,555 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 01:33:14,555 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 01:33:14,555 [INFO] Device classified as: unknown
+2026-03-08 01:33:14,555 [INFO] Running suspicious device analysis
+2026-03-08 01:33:14,555 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 01:33:14,556 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 01:33:14,556 [WARNING] Suspicious USB detected
+2026-03-08 01:33:14,556 [INFO] Blocking USB device /dev/sda
+2026-03-08 01:33:14,594 [ERROR] Failed to retrieve udev path
+2026-03-08 01:33:14,595 [ERROR] Unable to determine USB ID
+2026-03-08 01:33:14,596 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 01:33:14,613 [INFO] Alert inserted into database
+2026-03-08 01:33:14,613 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 01:33:14,613 [INFO] Security alert stored in database
+2026-03-08 01:37:59,724 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 01:37:59,724 [INFO] Gateway shutdown
+2026-03-08 01:40:25,221 [INFO] Database initialized successfully
+2026-03-08 01:40:25,221 [INFO] Starting USB monitor
+2026-03-08 01:40:25,227 [INFO] USB monitor started
+2026-03-08 01:40:39,927 [INFO] Database initialized successfully
+2026-03-08 01:40:39,928 [INFO] Starting USB monitor
+2026-03-08 01:40:39,931 [INFO] USB monitor started
+2026-03-08 01:46:50,889 [INFO] Database initialized successfully
+2026-03-08 01:46:50,890 [INFO] Starting USB monitor
+2026-03-08 01:46:50,893 [INFO] USB monitor started
+2026-03-08 03:33:37,972 [INFO] USB-Gateway : Gateway started
+2026-03-08 03:33:37,972 [INFO] Gateway started
+2026-03-08 03:33:37,975 [INFO] Database initialized successfully
+2026-03-08 03:33:37,976 [INFO] Starting USB monitor
+2026-03-08 03:33:37,979 [INFO] USB monitor started
+2026-03-08 03:33:51,271 [INFO] USB device detected: /dev/sda
+2026-03-08 03:33:51,272 [INFO] USB-Gateway : USB event triggered for /dev/sda
+2026-03-08 03:33:51,272 [INFO] USB event triggered for /dev/sda
+2026-03-08 03:33:51,272 [INFO] USB-Gateway : Processing device: /dev/sda
+2026-03-08 03:33:51,272 [INFO] Processing device: /dev/sda
+2026-03-08 03:33:51,272 [INFO] Starting enumeration for /dev/sda
+2026-03-08 03:33:51,323 [INFO] Enumeration complete: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '003'}
+2026-03-08 03:33:51,334 [INFO] Device stored in database
+2026-03-08 03:33:51,458 [INFO] Driver unbound for USB device 1-1
+2026-03-08 03:33:51,472 [ERROR] Failed to retrieve udev path
+2026-03-08 03:33:51,473 [ERROR] USB ID not found
+2026-03-08 03:33:51,473 [INFO] Extracting metadata for /dev/sda
+2026-03-08 03:33:51,486 [ERROR] Command failed: udevadm info --query=property --name /dev/sda
+2026-03-08 03:33:51,486 [ERROR] Unknown device "/dev/sda": No such device
+
+2026-03-08 03:33:51,486 [ERROR] udevadm returned no output
+2026-03-08 03:33:51,486 [INFO] Reading sysfs for /dev/sda
+2026-03-08 03:33:51,499 [ERROR] Unable to determine sysfs path
+2026-03-08 03:33:51,500 [INFO] Starting device classification
+2026-03-08 03:33:51,500 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 03:33:51,500 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 03:33:51,500 [INFO] Device classified as: unknown
+2026-03-08 03:33:51,500 [INFO] Running suspicious device analysis
+2026-03-08 03:33:51,500 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 03:33:51,500 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 03:33:51,500 [WARNING] Suspicious USB detected
+2026-03-08 03:33:51,500 [INFO] Blocking USB device /dev/sda
+2026-03-08 03:33:51,518 [ERROR] Failed to retrieve udev path
+2026-03-08 03:33:51,519 [ERROR] Unable to determine USB ID
+2026-03-08 03:33:51,519 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 03:33:51,532 [INFO] Alert inserted into database
+2026-03-08 03:33:51,533 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 03:33:51,533 [INFO] Security alert stored in database
+2026-03-08 05:28:55,792 [INFO] USB-Gateway : Gateway started
+2026-03-08 05:28:55,792 [INFO] Gateway started
+2026-03-08 05:28:55,795 [INFO] Database initialized successfully
+2026-03-08 05:28:55,795 [INFO] Starting USB monitor
+2026-03-08 05:28:55,798 [INFO] USB monitor running
+2026-03-08 05:29:00,549 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1')
+2026-03-08 05:29:00,550 [INFO] Device node detected: /dev/bus/usb/001/004
+2026-03-08 05:29:00,550 [INFO] USB-Gateway : USB event triggered for /dev/bus/usb/001/004
+2026-03-08 05:29:00,550 [INFO] USB event triggered for /dev/bus/usb/001/004
+2026-03-08 05:29:00,550 [INFO] USB-Gateway : Processing device: /dev/bus/usb/001/004
+2026-03-08 05:29:00,550 [INFO] Processing device: /dev/bus/usb/001/004
+2026-03-08 05:29:00,550 [INFO] Starting enumeration for /dev/bus/usb/001/004
+2026-03-08 05:29:00,584 [INFO] Enumeration complete: {'device_node': '/dev/bus/usb/001/004', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '004'}
+2026-03-08 05:29:00,594 [INFO] Device stored in database
+2026-03-08 05:29:00,673 [INFO] Driver unbound for USB device 1-1
+2026-03-08 05:29:00,701 [ERROR] Failed to retrieve udev path
+2026-03-08 05:29:00,701 [ERROR] USB ID not found
+2026-03-08 05:29:00,701 [INFO] Extracting metadata for /dev/bus/usb/001/004
+2026-03-08 05:29:00,725 [ERROR] Command failed: udevadm info --query=property --name /dev/bus/usb/001/004
+2026-03-08 05:29:00,725 [ERROR] Unknown device "/dev/bus/usb/001/004": No such device
+
+2026-03-08 05:29:00,725 [ERROR] udevadm returned no output
+2026-03-08 05:29:00,725 [INFO] Reading sysfs for /dev/bus/usb/001/004
+2026-03-08 05:29:00,749 [ERROR] Unable to determine sysfs path
+2026-03-08 05:29:00,749 [INFO] Starting device classification
+2026-03-08 05:29:00,749 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 05:29:00,750 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 05:29:00,750 [INFO] Device classified as: unknown
+2026-03-08 05:29:00,750 [INFO] Running suspicious device analysis
+2026-03-08 05:29:00,750 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 05:29:00,750 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 05:29:00,750 [WARNING] Suspicious USB detected
+2026-03-08 05:29:00,750 [INFO] Blocking USB device /dev/bus/usb/001/004
+2026-03-08 05:29:00,771 [ERROR] Failed to retrieve udev path
+2026-03-08 05:29:00,771 [ERROR] Unable to determine USB ID
+2026-03-08 05:29:00,771 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/004 Device: None
+2026-03-08 05:29:00,785 [INFO] Alert inserted into database
+2026-03-08 05:29:00,785 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 05:29:00,785 [INFO] Security alert stored in database
+2026-03-08 05:29:00,785 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0')
+2026-03-08 05:29:00,786 [WARNING] USB detected but device node not found
+2026-03-08 05:40:03,433 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 05:40:03,433 [INFO] Gateway shutdown
+2026-03-08 05:40:25,991 [INFO] USB-Gateway : Gateway started
+2026-03-08 05:40:25,991 [INFO] Gateway started
+2026-03-08 05:40:25,993 [INFO] Database initialized successfully
+2026-03-08 05:40:25,993 [INFO] Starting USB monitor
+2026-03-08 05:40:25,997 [INFO] USB monitor running
+2026-03-08 18:08:36,125 [INFO] USB-Gateway : Gateway started
+2026-03-08 18:08:36,125 [INFO] Gateway started
+2026-03-08 18:08:36,128 [INFO] Database initialized successfully
+2026-03-08 18:08:36,128 [INFO] Starting USB monitor
+2026-03-08 18:08:36,131 [INFO] USB monitor running
+2026-03-08 18:08:48,953 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2')
+2026-03-08 18:08:48,953 [INFO] Device node detected: /dev/bus/usb/001/003
+2026-03-08 18:08:48,953 [INFO] USB-Gateway : USB event triggered for /dev/bus/usb/001/003
+2026-03-08 18:08:48,953 [INFO] USB event triggered for /dev/bus/usb/001/003
+2026-03-08 18:08:48,954 [INFO] USB-Gateway : Processing device: /dev/bus/usb/001/003
+2026-03-08 18:08:48,954 [INFO] Processing device: /dev/bus/usb/001/003
+2026-03-08 18:08:48,954 [INFO] Starting enumeration for /dev/bus/usb/001/003
+2026-03-08 18:08:48,997 [INFO] Enumeration complete: {'device_node': '/dev/bus/usb/001/003', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '003'}
+2026-03-08 18:08:49,008 [INFO] Device stored in database
+2026-03-08 18:08:49,027 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:49,045 [ERROR] Permission denied - run as root
+2026-03-08 18:08:49,046 [INFO] Extracting metadata for /dev/bus/usb/001/003
+2026-03-08 18:08:49,064 [INFO] Metadata extracted: {'device_node': '/dev/bus/usb/001/003', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'device_type': 'usb_device', 'subsystem': 'usb', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:08:49,065 [INFO] Reading sysfs for /dev/bus/usb/001/003
+2026-03-08 18:08:49,084 [INFO] SysFS data collected: {'device_node': '/dev/bus/usb/001/003', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk 2.0', 'serial_number': '6920881161805167416', 'interface_class': '00', 'device_class': 'Unknown', 'sysfs_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2'}
+2026-03-08 18:08:49,084 [INFO] Starting device classification
+2026-03-08 18:08:49,084 [INFO] Classification via interface: Storage
+2026-03-08 18:08:49,084 [INFO] USB-Gateway : Device classified as: storage
+2026-03-08 18:08:49,084 [INFO] Device classified as: storage
+2026-03-08 18:08:49,085 [INFO] Running suspicious device analysis
+2026-03-08 18:08:49,085 [WARNING] Descriptor mismatch detected
+2026-03-08 18:08:49,085 [WARNING] Device marked as suspicious
+2026-03-08 18:08:49,085 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:08:49,085 [WARNING] Suspicious USB detected
+2026-03-08 18:08:49,085 [INFO] Blocking USB device /dev/bus/usb/001/003
+2026-03-08 18:08:49,103 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:49,104 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/003 Device: None
+2026-03-08 18:08:49,118 [INFO] Alert inserted into database
+2026-03-08 18:08:49,119 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:08:49,119 [INFO] Security alert stored in database
+2026-03-08 18:08:49,119 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0')
+2026-03-08 18:08:49,123 [WARNING] USB detected but device node not found
+2026-03-08 18:08:50,052 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda')
+2026-03-08 18:08:50,052 [INFO] Device node detected: /dev/sda
+2026-03-08 18:08:50,052 [INFO] USB-Gateway : USB event triggered for /dev/sda
+2026-03-08 18:08:50,052 [INFO] USB event triggered for /dev/sda
+2026-03-08 18:08:50,052 [INFO] USB-Gateway : Processing device: /dev/sda
+2026-03-08 18:08:50,052 [INFO] Processing device: /dev/sda
+2026-03-08 18:08:50,052 [INFO] Starting enumeration for /dev/sda
+2026-03-08 18:08:50,086 [INFO] Enumeration complete: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '003'}
+2026-03-08 18:08:50,095 [INFO] Device stored in database
+2026-03-08 18:08:50,110 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,128 [ERROR] Permission denied - run as root
+2026-03-08 18:08:50,128 [INFO] Extracting metadata for /dev/sda
+2026-03-08 18:08:50,146 [INFO] Metadata extracted: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'disk', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:08:50,146 [INFO] Reading sysfs for /dev/sda
+2026-03-08 18:08:50,163 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:08:50,163 [INFO] Starting device classification
+2026-03-08 18:08:50,164 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,164 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:08:50,164 [INFO] Device classified as: unknown
+2026-03-08 18:08:50,164 [INFO] Running suspicious device analysis
+2026-03-08 18:08:50,164 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,164 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:08:50,164 [WARNING] Suspicious USB detected
+2026-03-08 18:08:50,164 [INFO] Blocking USB device /dev/sda
+2026-03-08 18:08:50,180 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,180 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:08:50,193 [INFO] Alert inserted into database
+2026-03-08 18:08:50,193 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:08:50,193 [INFO] Security alert stored in database
+2026-03-08 18:08:50,193 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2')
+2026-03-08 18:08:50,194 [INFO] Device node detected: /dev/sda2
+2026-03-08 18:08:50,194 [INFO] USB-Gateway : USB event triggered for /dev/sda2
+2026-03-08 18:08:50,194 [INFO] USB event triggered for /dev/sda2
+2026-03-08 18:08:50,194 [INFO] USB-Gateway : Processing device: /dev/sda2
+2026-03-08 18:08:50,194 [INFO] Processing device: /dev/sda2
+2026-03-08 18:08:50,194 [INFO] Starting enumeration for /dev/sda2
+2026-03-08 18:08:50,220 [INFO] Enumeration complete: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '003'}
+2026-03-08 18:08:50,231 [INFO] Device stored in database
+2026-03-08 18:08:50,245 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,258 [ERROR] Permission denied - run as root
+2026-03-08 18:08:50,258 [INFO] Extracting metadata for /dev/sda2
+2026-03-08 18:08:50,275 [INFO] Metadata extracted: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:08:50,276 [INFO] Reading sysfs for /dev/sda2
+2026-03-08 18:08:50,289 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:08:50,289 [INFO] Starting device classification
+2026-03-08 18:08:50,289 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,289 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:08:50,289 [INFO] Device classified as: unknown
+2026-03-08 18:08:50,289 [INFO] Running suspicious device analysis
+2026-03-08 18:08:50,290 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,290 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:08:50,290 [WARNING] Suspicious USB detected
+2026-03-08 18:08:50,290 [INFO] Blocking USB device /dev/sda2
+2026-03-08 18:08:50,303 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,303 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:08:50,314 [INFO] Alert inserted into database
+2026-03-08 18:08:50,314 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:08:50,314 [INFO] Security alert stored in database
+2026-03-08 18:08:50,315 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1')
+2026-03-08 18:08:50,315 [INFO] Device node detected: /dev/sda1
+2026-03-08 18:08:50,315 [INFO] USB-Gateway : USB event triggered for /dev/sda1
+2026-03-08 18:08:50,315 [INFO] USB event triggered for /dev/sda1
+2026-03-08 18:08:50,315 [INFO] USB-Gateway : Processing device: /dev/sda1
+2026-03-08 18:08:50,315 [INFO] Processing device: /dev/sda1
+2026-03-08 18:08:50,315 [INFO] Starting enumeration for /dev/sda1
+2026-03-08 18:08:50,339 [INFO] Enumeration complete: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '003'}
+2026-03-08 18:08:50,348 [INFO] Device stored in database
+2026-03-08 18:08:50,362 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,375 [ERROR] Permission denied - run as root
+2026-03-08 18:08:50,375 [INFO] Extracting metadata for /dev/sda1
+2026-03-08 18:08:50,391 [INFO] Metadata extracted: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:08:50,392 [INFO] Reading sysfs for /dev/sda1
+2026-03-08 18:08:50,409 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:08:50,410 [INFO] Starting device classification
+2026-03-08 18:08:50,410 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,410 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:08:50,410 [INFO] Device classified as: unknown
+2026-03-08 18:08:50,410 [INFO] Running suspicious device analysis
+2026-03-08 18:08:50,410 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:08:50,410 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:08:50,410 [WARNING] Suspicious USB detected
+2026-03-08 18:08:50,410 [INFO] Blocking USB device /dev/sda1
+2026-03-08 18:08:50,424 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:08:50,425 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-08 18:08:50,439 [INFO] Alert inserted into database
+2026-03-08 18:08:50,439 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:08:50,439 [INFO] Security alert stored in database
+2026-03-08 18:11:12,357 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 18:11:12,357 [INFO] Gateway shutdown
+2026-03-08 18:14:11,912 [INFO] USB-Gateway : Gateway started
+2026-03-08 18:14:11,912 [INFO] Gateway started
+2026-03-08 18:14:11,914 [INFO] Database initialized successfully
+2026-03-08 18:14:11,914 [INFO] Starting USB monitor
+2026-03-08 18:14:11,916 [INFO] USB monitor running
+2026-03-08 18:14:20,788 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2')
+2026-03-08 18:14:20,790 [INFO] Device node detected: /dev/bus/usb/001/004
+2026-03-08 18:14:20,791 [INFO] USB-Gateway : USB event triggered for /dev/bus/usb/001/004
+2026-03-08 18:14:20,791 [INFO] USB event triggered for /dev/bus/usb/001/004
+2026-03-08 18:14:20,791 [INFO] USB-Gateway : Processing device: /dev/bus/usb/001/004
+2026-03-08 18:14:20,791 [INFO] Processing device: /dev/bus/usb/001/004
+2026-03-08 18:14:20,791 [INFO] Starting enumeration for /dev/bus/usb/001/004
+2026-03-08 18:14:20,835 [INFO] Enumeration complete: {'device_node': '/dev/bus/usb/001/004', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '004'}
+2026-03-08 18:14:20,849 [INFO] Device stored in database
+2026-03-08 18:14:20,872 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:20,886 [ERROR] Permission denied - run as root
+2026-03-08 18:14:20,886 [INFO] Extracting metadata for /dev/bus/usb/001/004
+2026-03-08 18:14:20,900 [INFO] Metadata extracted: {'device_node': '/dev/bus/usb/001/004', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'device_type': 'usb_device', 'subsystem': 'usb', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:14:20,900 [INFO] Reading sysfs for /dev/bus/usb/001/004
+2026-03-08 18:14:20,915 [INFO] SysFS data collected: {'device_node': '/dev/bus/usb/001/004', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk 2.0', 'serial_number': '6920881161805167416', 'interface_class': '00', 'device_class': 'Unknown', 'sysfs_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2'}
+2026-03-08 18:14:20,915 [INFO] Starting device classification
+2026-03-08 18:14:20,915 [INFO] Classification via interface: Storage
+2026-03-08 18:14:20,915 [INFO] USB-Gateway : Device classified as: storage
+2026-03-08 18:14:20,915 [INFO] Device classified as: storage
+2026-03-08 18:14:20,915 [INFO] Running suspicious device analysis
+2026-03-08 18:14:20,915 [WARNING] Descriptor mismatch detected
+2026-03-08 18:14:20,915 [WARNING] Device marked as suspicious
+2026-03-08 18:14:20,916 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:14:20,916 [WARNING] Suspicious USB detected
+2026-03-08 18:14:20,916 [INFO] Blocking USB device /dev/bus/usb/001/004
+2026-03-08 18:14:20,929 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:20,929 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/004 Device: None
+2026-03-08 18:14:20,941 [INFO] Alert inserted into database
+2026-03-08 18:14:20,941 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:14:20,941 [INFO] Security alert stored in database
+2026-03-08 18:14:20,942 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0')
+2026-03-08 18:14:20,945 [WARNING] USB detected but device node not found
+2026-03-08 18:14:21,846 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda')
+2026-03-08 18:14:21,846 [INFO] Device node detected: /dev/sda
+2026-03-08 18:14:21,846 [INFO] USB-Gateway : USB event triggered for /dev/sda
+2026-03-08 18:14:21,846 [INFO] USB event triggered for /dev/sda
+2026-03-08 18:14:21,847 [INFO] USB-Gateway : Processing device: /dev/sda
+2026-03-08 18:14:21,847 [INFO] Processing device: /dev/sda
+2026-03-08 18:14:21,847 [INFO] Starting enumeration for /dev/sda
+2026-03-08 18:14:21,878 [INFO] Enumeration complete: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '004'}
+2026-03-08 18:14:21,887 [INFO] Device stored in database
+2026-03-08 18:14:21,901 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:21,915 [ERROR] Permission denied - run as root
+2026-03-08 18:14:21,915 [INFO] Extracting metadata for /dev/sda
+2026-03-08 18:14:21,939 [INFO] Metadata extracted: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'disk', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:14:21,939 [INFO] Reading sysfs for /dev/sda
+2026-03-08 18:14:21,953 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:14:21,953 [INFO] Starting device classification
+2026-03-08 18:14:21,953 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:21,954 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:14:21,954 [INFO] Device classified as: unknown
+2026-03-08 18:14:21,954 [INFO] Running suspicious device analysis
+2026-03-08 18:14:21,954 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:21,954 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:14:21,954 [WARNING] Suspicious USB detected
+2026-03-08 18:14:21,954 [INFO] Blocking USB device /dev/sda
+2026-03-08 18:14:21,969 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:21,969 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:14:21,983 [INFO] Alert inserted into database
+2026-03-08 18:14:21,983 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:14:21,983 [INFO] Security alert stored in database
+2026-03-08 18:14:21,984 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2')
+2026-03-08 18:14:21,984 [INFO] Device node detected: /dev/sda2
+2026-03-08 18:14:21,984 [INFO] USB-Gateway : USB event triggered for /dev/sda2
+2026-03-08 18:14:21,984 [INFO] USB event triggered for /dev/sda2
+2026-03-08 18:14:21,984 [INFO] USB-Gateway : Processing device: /dev/sda2
+2026-03-08 18:14:21,984 [INFO] Processing device: /dev/sda2
+2026-03-08 18:14:21,984 [INFO] Starting enumeration for /dev/sda2
+2026-03-08 18:14:22,009 [INFO] Enumeration complete: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '004'}
+2026-03-08 18:14:22,020 [INFO] Device stored in database
+2026-03-08 18:14:22,034 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:22,047 [ERROR] Permission denied - run as root
+2026-03-08 18:14:22,048 [INFO] Extracting metadata for /dev/sda2
+2026-03-08 18:14:22,062 [INFO] Metadata extracted: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:14:22,062 [INFO] Reading sysfs for /dev/sda2
+2026-03-08 18:14:22,076 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:14:22,076 [INFO] Starting device classification
+2026-03-08 18:14:22,077 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:22,077 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:14:22,077 [INFO] Device classified as: unknown
+2026-03-08 18:14:22,077 [INFO] Running suspicious device analysis
+2026-03-08 18:14:22,077 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:22,077 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:14:22,077 [WARNING] Suspicious USB detected
+2026-03-08 18:14:22,077 [INFO] Blocking USB device /dev/sda2
+2026-03-08 18:14:22,091 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:22,091 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:14:22,103 [INFO] Alert inserted into database
+2026-03-08 18:14:22,103 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:14:22,103 [INFO] Security alert stored in database
+2026-03-08 18:14:22,104 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1')
+2026-03-08 18:14:22,104 [INFO] Device node detected: /dev/sda1
+2026-03-08 18:14:22,104 [INFO] USB-Gateway : USB event triggered for /dev/sda1
+2026-03-08 18:14:22,104 [INFO] USB event triggered for /dev/sda1
+2026-03-08 18:14:22,104 [INFO] USB-Gateway : Processing device: /dev/sda1
+2026-03-08 18:14:22,104 [INFO] Processing device: /dev/sda1
+2026-03-08 18:14:22,104 [INFO] Starting enumeration for /dev/sda1
+2026-03-08 18:14:22,129 [INFO] Enumeration complete: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '004'}
+2026-03-08 18:14:22,138 [INFO] Device stored in database
+2026-03-08 18:14:22,152 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:22,166 [ERROR] Permission denied - run as root
+2026-03-08 18:14:22,166 [INFO] Extracting metadata for /dev/sda1
+2026-03-08 18:14:22,183 [INFO] Metadata extracted: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:14:22,183 [INFO] Reading sysfs for /dev/sda1
+2026-03-08 18:14:22,199 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:14:22,200 [INFO] Starting device classification
+2026-03-08 18:14:22,200 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:22,200 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:14:22,200 [INFO] Device classified as: unknown
+2026-03-08 18:14:22,200 [INFO] Running suspicious device analysis
+2026-03-08 18:14:22,200 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:14:22,200 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:14:22,200 [WARNING] Suspicious USB detected
+2026-03-08 18:14:22,200 [INFO] Blocking USB device /dev/sda1
+2026-03-08 18:14:22,214 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:14:22,215 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-08 18:14:22,227 [INFO] Alert inserted into database
+2026-03-08 18:14:22,228 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:14:22,228 [INFO] Security alert stored in database
+2026-03-08 18:14:46,726 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 18:14:46,726 [INFO] Gateway shutdown
+2026-03-08 18:17:56,653 [INFO] USB-Gateway : Gateway started
+2026-03-08 18:17:56,653 [INFO] Gateway started
+2026-03-08 18:17:56,655 [INFO] Database initialized successfully
+2026-03-08 18:17:56,655 [INFO] Starting USB monitor
+2026-03-08 18:17:56,658 [INFO] USB monitor running
+2026-03-08 18:18:06,684 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2')
+2026-03-08 18:18:06,684 [INFO] Device node detected: /dev/bus/usb/001/005
+2026-03-08 18:18:06,685 [INFO] USB-Gateway : USB event triggered for /dev/bus/usb/001/005
+2026-03-08 18:18:06,685 [INFO] USB event triggered for /dev/bus/usb/001/005
+2026-03-08 18:18:06,685 [INFO] USB-Gateway : Processing device: /dev/bus/usb/001/005
+2026-03-08 18:18:06,685 [INFO] Processing device: /dev/bus/usb/001/005
+2026-03-08 18:18:06,686 [INFO] Starting enumeration for /dev/bus/usb/001/005
+2026-03-08 18:18:06,733 [INFO] Enumeration complete: {'device_node': '/dev/bus/usb/001/005', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '005'}
+2026-03-08 18:18:06,744 [INFO] Device stored in database
+2026-03-08 18:18:06,765 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:06,785 [ERROR] Permission denied - run as root
+2026-03-08 18:18:06,786 [INFO] Extracting metadata for /dev/bus/usb/001/005
+2026-03-08 18:18:06,806 [INFO] Metadata extracted: {'device_node': '/dev/bus/usb/001/005', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk_2.0', 'serial_number': '6920881161805167416', 'device_type': 'usb_device', 'subsystem': 'usb', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:18:06,806 [INFO] Reading sysfs for /dev/bus/usb/001/005
+2026-03-08 18:18:06,821 [INFO] SysFS data collected: {'device_node': '/dev/bus/usb/001/005', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'USB', 'product': 'Disk 2.0', 'serial_number': '6920881161805167416', 'interface_class': '00', 'device_class': 'Unknown', 'sysfs_path': '/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2'}
+2026-03-08 18:18:06,821 [INFO] Starting device classification
+2026-03-08 18:18:06,821 [INFO] Classification via interface: Storage
+2026-03-08 18:18:06,821 [INFO] USB-Gateway : Device classified as: storage
+2026-03-08 18:18:06,821 [INFO] Device classified as: storage
+2026-03-08 18:18:06,821 [INFO] Running suspicious device analysis
+2026-03-08 18:18:06,821 [WARNING] Descriptor mismatch detected
+2026-03-08 18:18:06,821 [WARNING] Device marked as suspicious
+2026-03-08 18:18:06,821 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:18:06,821 [WARNING] Suspicious USB detected
+2026-03-08 18:18:06,821 [INFO] Blocking USB device /dev/bus/usb/001/005
+2026-03-08 18:18:06,835 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:06,835 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/005 Device: None
+2026-03-08 18:18:06,846 [INFO] Alert inserted into database
+2026-03-08 18:18:06,846 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:18:06,846 [INFO] Security alert stored in database
+2026-03-08 18:18:06,846 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0')
+2026-03-08 18:18:06,849 [WARNING] USB detected but device node not found
+2026-03-08 18:18:07,738 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda')
+2026-03-08 18:18:07,739 [INFO] Device node detected: /dev/sda
+2026-03-08 18:18:07,739 [INFO] USB-Gateway : USB event triggered for /dev/sda
+2026-03-08 18:18:07,739 [INFO] USB event triggered for /dev/sda
+2026-03-08 18:18:07,739 [INFO] USB-Gateway : Processing device: /dev/sda
+2026-03-08 18:18:07,739 [INFO] Processing device: /dev/sda
+2026-03-08 18:18:07,739 [INFO] Starting enumeration for /dev/sda
+2026-03-08 18:18:07,769 [INFO] Enumeration complete: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '005'}
+2026-03-08 18:18:07,780 [INFO] Device stored in database
+2026-03-08 18:18:07,794 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:07,808 [ERROR] Permission denied - run as root
+2026-03-08 18:18:07,808 [INFO] Extracting metadata for /dev/sda
+2026-03-08 18:18:07,832 [INFO] Metadata extracted: {'device_node': '/dev/sda', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'disk', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:18:07,833 [INFO] Reading sysfs for /dev/sda
+2026-03-08 18:18:07,848 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:18:07,848 [INFO] Starting device classification
+2026-03-08 18:18:07,848 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:07,848 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:18:07,848 [INFO] Device classified as: unknown
+2026-03-08 18:18:07,848 [INFO] Running suspicious device analysis
+2026-03-08 18:18:07,848 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:07,848 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:18:07,848 [WARNING] Suspicious USB detected
+2026-03-08 18:18:07,848 [INFO] Blocking USB device /dev/sda
+2026-03-08 18:18:07,864 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:07,864 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:18:07,874 [INFO] Alert inserted into database
+2026-03-08 18:18:07,875 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:18:07,875 [INFO] Security alert stored in database
+2026-03-08 18:18:07,875 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2')
+2026-03-08 18:18:07,875 [INFO] Device node detected: /dev/sda2
+2026-03-08 18:18:07,875 [INFO] USB-Gateway : USB event triggered for /dev/sda2
+2026-03-08 18:18:07,875 [INFO] USB event triggered for /dev/sda2
+2026-03-08 18:18:07,876 [INFO] USB-Gateway : Processing device: /dev/sda2
+2026-03-08 18:18:07,876 [INFO] Processing device: /dev/sda2
+2026-03-08 18:18:07,876 [INFO] Starting enumeration for /dev/sda2
+2026-03-08 18:18:07,901 [INFO] Enumeration complete: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '005'}
+2026-03-08 18:18:07,909 [INFO] Device stored in database
+2026-03-08 18:18:07,923 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:07,936 [ERROR] Permission denied - run as root
+2026-03-08 18:18:07,936 [INFO] Extracting metadata for /dev/sda2
+2026-03-08 18:18:07,950 [INFO] Metadata extracted: {'device_node': '/dev/sda2', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:18:07,951 [INFO] Reading sysfs for /dev/sda2
+2026-03-08 18:18:07,965 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:18:07,965 [INFO] Starting device classification
+2026-03-08 18:18:07,966 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:07,966 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:18:07,966 [INFO] Device classified as: unknown
+2026-03-08 18:18:07,966 [INFO] Running suspicious device analysis
+2026-03-08 18:18:07,966 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:07,966 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:18:07,966 [WARNING] Suspicious USB detected
+2026-03-08 18:18:07,966 [INFO] Blocking USB device /dev/sda2
+2026-03-08 18:18:07,980 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:07,980 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:18:07,992 [INFO] Alert inserted into database
+2026-03-08 18:18:07,992 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:18:07,992 [INFO] Security alert stored in database
+2026-03-08 18:18:07,993 [INFO] USB event detected: Device('/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1')
+2026-03-08 18:18:07,993 [INFO] Device node detected: /dev/sda1
+2026-03-08 18:18:07,993 [INFO] USB-Gateway : USB event triggered for /dev/sda1
+2026-03-08 18:18:07,993 [INFO] USB event triggered for /dev/sda1
+2026-03-08 18:18:07,993 [INFO] USB-Gateway : Processing device: /dev/sda1
+2026-03-08 18:18:07,993 [INFO] Processing device: /dev/sda1
+2026-03-08 18:18:07,994 [INFO] Starting enumeration for /dev/sda1
+2026-03-08 18:18:08,018 [INFO] Enumeration complete: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'bus_number': '001', 'device_number': '005'}
+2026-03-08 18:18:08,028 [INFO] Device stored in database
+2026-03-08 18:18:08,041 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:08,055 [ERROR] Permission denied - run as root
+2026-03-08 18:18:08,055 [INFO] Extracting metadata for /dev/sda1
+2026-03-08 18:18:08,072 [INFO] Metadata extracted: {'device_node': '/dev/sda1', 'vendor_id': '048d', 'product_id': '1234', 'manufacturer': 'VendorCo', 'product': 'ProductCode', 'serial_number': '6920881161805167416', 'device_type': 'partition', 'subsystem': 'block', 'bus': 'usb', 'usb_interfaces': ':080650:'}
+2026-03-08 18:18:08,072 [INFO] Reading sysfs for /dev/sda1
+2026-03-08 18:18:08,089 [ERROR] Sysfs read failed: 'NoneType' object has no attribute 'lower'
+2026-03-08 18:18:08,089 [INFO] Starting device classification
+2026-03-08 18:18:08,089 [ERROR] Classification failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:08,089 [INFO] USB-Gateway : Device classified as: unknown
+2026-03-08 18:18:08,089 [INFO] Device classified as: unknown
+2026-03-08 18:18:08,089 [INFO] Running suspicious device analysis
+2026-03-08 18:18:08,089 [ERROR] Suspicious detection failed: 'NoneType' object has no attribute 'get'
+2026-03-08 18:18:08,090 [WARNING] USB-Gateway : Suspicious USB detected
+2026-03-08 18:18:08,090 [WARNING] Suspicious USB detected
+2026-03-08 18:18:08,090 [INFO] Blocking USB device /dev/sda1
+2026-03-08 18:18:08,103 [ERROR] Permission denied (run gateway as root)
+2026-03-08 18:18:08,104 [WARNING] ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-08 18:18:08,114 [INFO] Alert inserted into database
+2026-03-08 18:18:08,115 [INFO] USB-Gateway : Security alert stored in database
+2026-03-08 18:18:08,115 [INFO] Security alert stored in database
+2026-03-08 18:18:29,517 [INFO] USB-Gateway : Gateway shutdown
+2026-03-08 18:18:29,517 [INFO] Gateway shutdown

@@ -1,0 +1,15 @@
+2026-03-08 01:33:14,596 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 03:33:51,519 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 05:29:00,771 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/004 Device: None
+2026-03-08 18:08:49,104 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/003 Device: None
+2026-03-08 18:08:50,180 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:08:50,303 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:08:50,425 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-08 18:14:20,929 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/004 Device: None
+2026-03-08 18:14:21,969 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:14:22,091 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:14:22,215 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-08 18:18:06,835 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/005 Device: None
+2026-03-08 18:18:07,864 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-08 18:18:07,980 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
+2026-03-08 18:18:08,104 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None

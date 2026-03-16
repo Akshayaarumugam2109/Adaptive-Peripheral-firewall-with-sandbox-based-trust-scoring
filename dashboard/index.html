@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>USB Security Gateway Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>USB Security Gateway</h1>
+<p>Real-Time Peripheral Security Monitor</p>
+
+</header>
+
+
+<div class="container">
+
+<!-- Device Section -->
+<section>
+
+<h2>Connected USB Devices</h2>
+
+<table id="deviceTable">
+
+<thead>
+<tr>
+<th>Device Node</th>
+<th>Vendor</th>
+<th>Product</th>
+<th>Serial</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+</section>
+
+
+<!-- Scan Status -->
+<section>
+
+<h2>Scan Status</h2>
+
+<div id="scanStatus">
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="scanText">Waiting for device...</p>
+
+</div>
+
+</section>
+
+
+<!-- Alerts -->
+<section>
+
+<h2>Security Alerts</h2>
+
+<ul id="alertList"></ul>
+
+</section>
+
+</div>
+
+
+<script src="js/device_monitor.js"></script>
+<script src="js/scanning_ui.js"></script>
+<script src="js/alerts.js"></script>
+
+</body>
+
+</html>
