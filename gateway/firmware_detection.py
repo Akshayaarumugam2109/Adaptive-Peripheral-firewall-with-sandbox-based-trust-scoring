@@ -1,91 +1,84 @@
-import pyudev
+#!/usr/bin/env python3
+"""
+HID Injection / BadUSB Detector
+
+Detects keyboard/mouse devices that may be rubber ducky or HID injection attacks.
+Called from main.py for HID-class devices before allowing them.
+"""
+
 import os
+import logging
 
-# Suspicious device classes
-HID_CLASS = "03"
-MASS_STORAGE_CLASS = "08"
+logger = logging.getLogger("Firmware-Detector")
 
-def get_usb_attributes(device):
-    """Extract USB enumeration metadata"""
+# Known legitimate HID vendor IDs (keyboards, mice)
+TRUSTED_HID_VENDORS = {
+    "046d",  # Logitech
+    "045e",  # Microsoft
+    "04f2",  # Chicony
+    "0461",  # Primax
+    "04b3",  # IBM
+    "04d9",  # Holtek (generic keyboards)
+    "1c4f",  # SiGma Micro
+    "258a",  # SINOWEALTH
+    "0c45",  # Microdia
+}
 
-    info = {
-        "vendor_id": device.get("ID_VENDOR_ID"),
-        "product_id": device.get("ID_MODEL_ID"),
-        "manufacturer": device.get("ID_VENDOR"),
-        "product": device.get("ID_MODEL"),
-        "serial": device.get("ID_SERIAL_SHORT"),
-        "device_type": device.get("ID_USB_DRIVER"),
-        "device_class": device.get("ID_USB_CLASS")
-    }
-
-    return info
+# Vendors commonly used in attack hardware (Hak5, cheap clones)
+SUSPICIOUS_HID_VENDORS = {
+    "1b4f",  # Hak5 / Rubber Ducky
+    "f000",  # Common fake vendor
+    "0000",  # Zero vendor
+}
 
 
-def detect_firmware_attack(device_info):
+def detect_hid_attack(device_info: dict):
     """
-    Detect suspicious USB firmware behavior
-    """
+    Analyse a HID device for injection attack indicators.
 
+    Returns:
+        (suspicious: bool, reasons: list[str])
+    """
     suspicious = False
-    reason = ""
+    reasons = []
 
-    device_class = device_info.get("device_class")
-    device_type = device_info.get("device_type")
+    vendor_id  = (device_info.get("vendor_id") or "").lower().strip()
+    product_id = (device_info.get("product_id") or "").lower().strip()
+    serial     = (device_info.get("serial_number") or "").strip()
+    interfaces = device_info.get("usb_interfaces", "")
 
-    # HID attack detection
-    if device_class == HID_CLASS:
+    # Rule 1: Known attack vendor
+    if vendor_id in SUSPICIOUS_HID_VENDORS:
+        reasons.append(f"Known attack hardware vendor ID: {vendor_id}")
         suspicious = True
-        reason = "Possible HID Injection Device"
 
-    # Composite device detection
-    if device_type == "usb-storage" and device_class == HID_CLASS:
+    # Rule 2: HID device with no vendor ID
+    if not vendor_id or vendor_id in ("unknown", ""):
+        reasons.append("HID device missing vendor ID — potential spoofed device")
         suspicious = True
-        reason = "Possible BadUSB (Storage + HID)"
 
-    return suspicious, reason
+    # Rule 3: HID + Storage composite (BadUSB classic pattern)
+    if interfaces:
+        iface_classes = [
+            interfaces[i+1:i+3]
+            for i in range(len(interfaces))
+            if interfaces[i] == ":" and i+3 <= len(interfaces)
+        ]
+        has_hid     = "03" in iface_classes
+        has_storage = "08" in iface_classes
+        if has_hid and has_storage:
+            reasons.append("Composite HID+Storage device — classic BadUSB attack pattern")
+            suspicious = True
 
+    # Rule 4: HID device with suspiciously short or missing serial
+    if not serial or serial in ("unknown", ""):
+        if vendor_id not in TRUSTED_HID_VENDORS:
+            reasons.append("Untrusted HID vendor with no serial number")
+            suspicious = True
 
-def start_usb_enumeration_monitor():
+    if suspicious:
+        logger.warning(f"HID attack indicators on {device_info.get('device_node')}: {reasons}")
+    else:
+        logger.info(f"HID device {device_info.get('device_node')} passed firmware check")
 
-    context = pyudev.Context()
-    monitor = pyudev.Monitor.from_netlink(context)
-    monitor.filter_by(subsystem='usb')
-
-    print("USB Enumeration Monitor Started...\n")
-
-    for device in monitor:
-
-        if device.action == 'add':
-
-            print("USB Device Detected")
-            print("Starting Enumeration Analysis...\n")
-
-            device_info = get_usb_attributes(device)
-
-            print("Device Information:")
-            for k, v in device_info.items():
-                print(f"{k} : {v}")
-
-            suspicious, reason = detect_firmware_attack(device_info)
-
-            if suspicious:
-
-                print("\n? Firmware Attack Detected!")
-                print("Reason:", reason)
-                print("Blocking USB Device...\n")
-
-                return {
-                    "status": "blocked",
-                    "reason": reason,
-                    "device": device_info
-                }
-
-            else:
-
-                print("\nDevice appears safe")
-                print("Proceed to sandbox analysis\n")
-
-                return {
-                    "status": "safe",
-                    "device": device_info
-                }
+    return suspicious, reasons

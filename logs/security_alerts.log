@@ -13,3 +13,212 @@
 2026-03-08 18:18:07,864 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
 2026-03-08 18:18:07,980 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda2 Device: None
 2026-03-08 18:18:08,104 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 21:05:36,937 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/003 Device: None
+2026-03-26 21:05:38,305 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 21:06:22,386 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/004 Device: None
+2026-03-26 21:06:22,496 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/hidraw0 Device: None
+2026-03-26 21:06:22,611 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/hidraw1 Device: None
+2026-03-26 21:07:22,240 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/bus/usb/001/005 Device: None
+2026-03-26 22:16:43,870 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 22:44:56,228 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 22:50:40,528 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 22:51:58,826 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 22:54:35,592 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 22:54:35,725 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 22:59:04,168 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 22:59:04,288 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:00:54,111 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:00:54,230 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:06:04,564 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:06:04,689 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:10:41,137 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:10:41,269 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:13:47,642 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:13:47,776 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:15:11,314 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:15:11,450 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:21:27,187 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:21:27,341 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:22:33,893 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:22:34,037 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:25:22,022 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:25:22,152 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:30:02,082 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:30:02,201 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:32:35,397 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:32:35,549 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:36:25,422 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:36:25,555 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:45:18,865 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:45:19,030 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:45:20,148 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:45:20,294 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:51:17,822 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:51:17,970 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:53:01,997 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-26 23:53:02,142 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:57:32,879 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-26 23:57:32,993 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-27 00:02:03,317 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda Device: None
+2026-03-27 00:02:03,444 [WARNING] USB-Security : ALERT [Suspicious USB Device] Blocked device /dev/sda1 Device: None
+2026-03-27 01:35:33,719 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device restricted to sandbox (score=70) Device: /dev/sda
+2026-03-27 01:39:06,464 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device restricted to sandbox (score=70) Device: /dev/sda
+2026-03-27 01:41:42,803 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device restricted to sandbox (score=70) Device: /dev/sda
+2026-03-27 01:48:02,703 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device restricted to sandbox (score=70) Device: /dev/sda
+2026-03-27 01:51:26,921 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 01:51:27,061 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 01:51:45,103 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 01:51:45,136 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 01:51:49,192 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 01:51:49,310 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 01:54:47,506 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 01:54:47,660 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 01:54:51,759 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 01:54:51,828 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:08:51,162 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:08:51,199 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:08:51,204 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 02:08:51,312 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 02:08:51,324 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:08:51,387 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:09:51,274 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 02:09:51,276 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:09:51,277 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:09:51,418 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:09:51,437 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:09:51,489 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 02:22:41,776 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:22:41,826 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:22:43,785 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 02:22:43,788 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:22:43,867 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:22:43,942 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 02:27:15,623 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:27:15,696 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:27:17,621 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda1
+2026-03-27 02:27:17,622 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:27:17,774 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:27:17,801 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda1
+2026-03-27 02:30:58,200 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:30:58,202 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:30:58,332 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:30:58,353 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:40:22,431 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:40:22,434 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:40:22,500 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:40:22,552 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:46:48,858 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:46:48,924 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:46:50,869 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:46:51,047 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:55:25,289 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:55:25,291 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:55:25,331 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:55:25,442 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 02:59:13,487 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 02:59:13,512 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 02:59:13,567 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 02:59:13,729 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 03:03:32,570 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 1-1.1
+2026-03-27 03:03:32,664 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 1-1.1
+2026-03-27 03:03:34,498 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 03:03:34,626 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 03:12:08,677 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 1-1
+2026-03-27 03:14:03,079 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: /dev/sda
+2026-03-27 03:14:03,225 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 03:16:58,526 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 1-1
+2026-03-27 03:21:35,350 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:02:46,784 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:05:52,297 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:05:52,349 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:05:54,586 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:07:37,575 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:07:37,604 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:07:39,782 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:12:13,807 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:12:13,854 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:12:14,022 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:12:36,862 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:12:36,965 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:12:54,855 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:12:54,903 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:12:55,072 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:13:16,869 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:13:16,917 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:13:17,098 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:13:56,912 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:13:56,972 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:13:57,138 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:15:09,523 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:15:09,560 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:15:11,797 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:17:51,730 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:17:51,833 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:17:52,056 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:21:51,384 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:21:51,434 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:21:59,448 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:21:59,568 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:22:01,786 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:32:46,967 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:32:47,005 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:32:49,518 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=60) Device: /dev/sda
+2026-03-27 09:59:47,185 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected Device: 2-1
+2026-03-27 09:59:47,241 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 09:59:49,249 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:03:27,654 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:03:29,690 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:07:01,173 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:07:01,203 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:09:47,660 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:09:49,813 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:10:33,313 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:10:35,361 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:12:22,844 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:12:24,863 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:22:47,937 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:22:50,005 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:27:30,802 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:27:30,844 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:27:46,850 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:27:46,914 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:33:48,752 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:34:18,781 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:34:20,846 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:39:05,319 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected:
+  • Descriptor mismatch: Device reports storage class (0x08) but kernel detected as unknown (BadUSB signature) Device: 2-1
+2026-03-27 10:39:05,375 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:39:06,368 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:39:06,407 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:45:02,365 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:45:34,344 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 10:45:36,443 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: /dev/sda
+2026-03-27 10:45:40,162 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 11:02:18,281 [WARNING] USB-Security : ALERT [DEVICE_BLOCKED] Suspicious USB device was blocked Device: 2-1
+2026-03-27 11:02:18,308 [WARNING] USB-Security : ALERT [SUSPICIOUS_USB] Suspicious USB firmware behavior detected:
+  • Device is missing vendor ID or product ID in USB descriptor (potential firmware spoofing) Device: /dev/sda1
+2026-03-27 11:03:00,393 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=51) Device: 1-1.2
+2026-03-27 11:03:46,682 [WARNING] USB-Security : ALERT [DEVICE_SANDBOXED] Device sandboxed (score=51) Device: 1-1.4
+2026-03-27 11:31:11,940 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device allowed — 13 clean files forwarded (score=91) Device: /dev/sdb1
+2026-03-27 11:36:20,348 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device allowed — 11 clean files forwarded (score=96) Device: /dev/sda1
+2026-03-27 11:37:16,926 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 11:40:21,650 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 11:40:22,186 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 11:59:32,490 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:00:23,046 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:05:52,968 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:42:09,609 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:57:24,490 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:57:32,576 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 12:58:13,578 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 13:25:17,973 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 13:32:49,984 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 13:45:09,283 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 13:50:52,205 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sdb1
+2026-03-27 14:01:30,445 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 14:06:14,469 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 14:18:27,583 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 14:19:58,667 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 14:32:57,670 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 14:38:25,142 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1
+2026-03-27 15:14:06,871 [WARNING] USB-Security : ALERT [DEVICE_ALLOWED] Device whitelisted (fast-track) Device: /dev/sda1

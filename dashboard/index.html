@@ -1,85 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
-<title>USB Security Gateway Dashboard</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Peripheral Firewall</title>
 <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
 
+<!-- ═══════════════════════════════════════════════════════════ HEADER -->
 <header>
-
-<h1>USB Security Gateway</h1>
-<p>Real-Time Peripheral Security Monitor</p>
-
+  <div class="hdr-left">
+    <div class="hdr-logo">
+      <svg width="32" height="32" viewBox="0 0 32 32"><polygon points="16,2 30,9 30,20 16,30 2,20 2,9" fill="none" stroke="#00d4ff" stroke-width="1.5"/><polygon points="16,7 25,12 25,19 16,25 7,19 7,12" fill="rgba(0,212,255,0.08)" stroke="#00d4ff" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="#00d4ff"/></svg>
+    </div>
+    <div>
+      <div class="hdr-title">Adaptive Peripheral Firewall</div>
+      <div class="hdr-sub">Sandbox-Based Trust Scoring</div>
+    </div>
+  </div>
+  <div class="hdr-center">
+    <div class="hdr-metric"><span class="metric-dot green"></span>Firewall Active</div>
+    <div class="hdr-sep"></div>
+    <div class="hdr-metric"><span class="metric-dot cyan"></span>Zero Trust Mode</div>
+    <div class="hdr-sep"></div>
+    <div class="hdr-metric" id="hdrAlerts"><span class="metric-dot yellow"></span>Alerts: <b id="alertCount">0</b></div>
+  </div>
+  <div class="hdr-right">
+    <div class="hdr-clock" id="clock">--:--:--</div>
+    <div class="hdr-status" id="gwStatus">● ACTIVE</div>
+  </div>
 </header>
 
+<!-- ═══════════════════════════════════════════════════════════ MAIN GRID -->
+<div class="grid">
 
-<div class="container">
+  <!-- ── COL 1: Connected Device + Sandbox Flow ── -->
+  <div class="col col-left">
 
-<!-- Device Section -->
-<section>
+    <!-- Connected Device -->
+    <div class="panel" id="devicePanel">
+      <div class="panel-hdr">
+        <span class="panel-icon">🔌</span>
+        <span class="panel-title">Connected Device</span>
+        <span class="live-dot"></span>
+        <span class="live-label">LIVE</span>
+      </div>
+      <div id="deviceContent">
+        <div class="idle-wrap">
+          <div class="idle-hex">
+            <svg width="60" height="60" viewBox="0 0 60 60"><polygon points="30,4 56,18 56,42 30,56 4,42 4,18" fill="none" stroke="rgba(0,212,255,0.2)" stroke-width="1.5"/></svg>
+            <span class="idle-q">?</span>
+          </div>
+          <p class="idle-txt">Waiting for peripheral...</p>
+          <p class="idle-sub">Connect a USB device to begin analysis</p>
+        </div>
+      </div>
+    </div>
 
-<h2>Connected USB Devices</h2>
+    <!-- Sandbox Flow -->
+    <div class="panel">
+      <div class="panel-hdr">
+        <span class="panel-icon">🔬</span>
+        <span class="panel-title">Gateway Flow</span>
+      </div>
+      <div class="flow-wrap">
+        <div class="flow-node" id="flowUSB">
+          <div class="flow-icon">💾</div>
+          <div class="flow-label">USB Device</div>
+        </div>
+        <div class="flow-arrow" id="flowArrow1">
+          <svg width="60" height="20"><defs><marker id="a" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#00d4ff"/></marker></defs><line x1="0" y1="10" x2="54" y2="10" stroke="#00d4ff" stroke-width="1.5" marker-end="url(#a)" stroke-dasharray="4,3"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="0.8s" repeatCount="indefinite"/></line></svg>
+        </div>
+        <div class="flow-node" id="flowSandbox">
+          <div class="flow-icon">🛡️</div>
+          <div class="flow-label">Sandbox</div>
+        </div>
+        <div class="flow-arrow" id="flowArrow2">
+          <svg width="60" height="20"><line x1="0" y1="10" x2="54" y2="10" stroke="#00d4ff" stroke-width="1.5" marker-end="url(#a)" stroke-dasharray="4,3"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="0.8s" repeatCount="indefinite"/></line></svg>
+        </div>
+        <div class="flow-node" id="flowHost">
+          <div class="flow-icon">💻</div>
+          <div class="flow-label">Host System</div>
+        </div>
+      </div>
+      <div id="flowStatus" class="flow-status">Monitoring...</div>
+    </div>
 
-<table id="deviceTable">
+  <!-- Sandbox Proof -->
+    <div class="panel">
+      <div class="panel-hdr">
+        <span class="panel-icon">🔒</span>
+        <span class="panel-title">Sandbox Isolation Proof</span>
+      </div>
+      <div id="sandboxProof" style="padding:14px 18px">
+        <div class="proof-row"><span class="proof-key">Mount Path</span><span class="proof-val" id="proofPath">—</span></div>
+        <div class="proof-row"><span class="proof-key">Active Mounts</span><span class="proof-val" id="proofMounts">—</span></div>
+        <div class="proof-row"><span class="proof-key">ClamAV</span><span class="proof-val" id="proofClamav">—</span></div>
+        <div class="proof-row"><span class="proof-key">YARA</span><span class="proof-val" id="proofYara">—</span></div>
+        <div style="margin-top:10px;font-size:0.72rem;color:var(--muted)">Mount Flags:</div>
+        <div class="proof-flags">
+          <span class="proof-flag">ro — Read Only</span>
+          <span class="proof-flag">noexec — No Execution</span>
+          <span class="proof-flag">nosuid — No Privilege Escalation</span>
+          <span class="proof-flag">nodev — No Device Access</span>
+        </div>
+      </div>
+    </div>
 
-<thead>
-<tr>
-<th>Device Node</th>
-<th>Vendor</th>
-<th>Product</th>
-<th>Serial</th>
-</tr>
-</thead>
+    <!-- Scan Status -->
+    <div class="panel">
+      <div class="panel-hdr">
+        <span class="panel-icon">📡</span>
+        <span class="panel-title">Scan Status</span>
+      </div>
+      <div class="scan-list" id="scanStatus">
+        <div class="scan-row pending" id="scanClamav">
+          <span class="scan-icon">○</span>
+          <span class="scan-name">ClamAV Scan</span>
+          <span class="scan-result" id="clamavResult">Waiting</span>
+        </div>
+        <div class="scan-row pending" id="scanYara">
+          <span class="scan-icon">○</span>
+          <span class="scan-name">YARA Analysis</span>
+          <span class="scan-result" id="yaraResult">Waiting</span>
+        </div>
+        <div class="scan-row pending" id="scanSandbox">
+          <span class="scan-icon">○</span>
+          <span class="scan-name">Sandbox Inspection</span>
+          <span class="scan-result" id="sandboxResult">Waiting</span>
+        </div>
+        <div class="scan-row pending" id="scanBehaviour">
+          <span class="scan-icon">○</span>
+          <span class="scan-name">Behaviour Analysis</span>
+          <span class="scan-result" id="behaviourResult">Waiting</span>
+        </div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+    </div>
 
-<tbody></tbody>
+  </div>
 
-</table>
+  <!-- ── COL 2: Trust Score + File Results ── -->
+  <div class="col col-mid">
 
-</section>
+    <!-- Trust Score Gauge -->
+    <div class="panel panel-score">
+      <div class="panel-hdr">
+        <span class="panel-icon">⚡</span>
+        <span class="panel-title">Trust Score</span>
+        <span id="decisionBadge" class="badge badge-idle">IDLE</span>
+      </div>
+      <div class="gauge-wrap">
+        <svg class="gauge-svg" viewBox="0 0 200 130">
+          <!-- Background arc -->
+          <path d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="14" stroke-linecap="round"/>
+          <!-- Colored arc -->
+          <path id="gaugeArc" d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="#00d4ff" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="251.2" stroke-dashoffset="251.2"/>
+          <!-- Score text -->
+          <text id="gaugeScore" x="100" y="100" text-anchor="middle" font-size="38" font-weight="800" fill="#fff">--</text>
+          <text x="100" y="120" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="3">TRUST SCORE</text>
+          <!-- Tick marks -->
+          <text x="18" y="125" font-size="9" fill="rgba(255,255,255,0.3)">0</text>
+          <text x="88" y="28" font-size="9" fill="rgba(255,255,255,0.3)">50</text>
+          <text x="172" y="125" font-size="9" fill="rgba(255,255,255,0.3)">100</text>
+        </svg>
+        <div class="gauge-label" id="gaugeLabel">NO DEVICE</div>
+      </div>
 
+      <!-- Score Reasons -->
+      <div class="reasons-wrap">
+        <div class="reasons-title">Score Breakdown</div>
+        <div id="reasonsList" class="reasons-list">
+          <div class="reason-empty">Connect a device to see breakdown</div>
+        </div>
+      </div>
+    </div>
 
-<!-- Scan Status -->
-<section>
+    <!-- File Results (current device) -->
+    <div class="panel" id="filePanel" style="display:none">
+      <div class="panel-hdr">
+        <span class="panel-icon">📂</span>
+        <span class="panel-title">File Analysis</span>
+        <span id="fileCount" class="badge badge-idle">0 files</span>
+      </div>
+      <div id="fileList" class="file-list"></div>
+    </div>
 
-<h2>Scan Status</h2>
+    <!-- File Analysis Summary -->
+    <div class="panel" id="fileAnalysisPanel">
+      <div class="panel-hdr">
+        <span class="panel-icon">🗂️</span>
+        <span class="panel-title">Analysed Files</span>
+        <span id="faScanBadge" class="badge badge-idle">—</span>
+      </div>
+      <div class="fa-stats">
+        <div class="fa-stat">
+          <span class="fa-stat-val" id="faTotal">—</span>
+          <span class="fa-stat-lbl">Total</span>
+        </div>
+        <div class="fa-stat">
+          <span class="fa-stat-val green" id="faClean">—</span>
+          <span class="fa-stat-lbl">Clean</span>
+        </div>
+        <div class="fa-stat">
+          <span class="fa-stat-val red" id="faInfected">—</span>
+          <span class="fa-stat-lbl">Infected</span>
+        </div>
+        <div class="fa-stat">
+          <span class="fa-stat-val yellow" id="faSuspicious">—</span>
+          <span class="fa-stat-lbl">Suspicious</span>
+        </div>
+        <div class="fa-stat">
+          <span class="fa-stat-val" id="faTrustScore" style="color:var(--muted)">—</span>
+          <span class="fa-stat-lbl">Trust Score</span>
+        </div>
+      </div>
+      <div id="faFileList" class="file-list"></div>
+    </div>
 
-<div id="scanStatus">
+  </div>
 
-<div class="progress">
+  <!-- ── COL 3: Alerts + Device History ── -->
+  <div class="col col-right">
 
-<div id="progressBar"></div>
+    <!-- Security Alerts -->
+    <div class="panel panel-alerts">
+      <div class="panel-hdr">
+        <span class="panel-icon">🚨</span>
+        <span class="panel-title">Security Alerts</span>
+      </div>
+      <ul id="alertList" class="alert-list">
+        <li class="empty-row">No alerts yet</li>
+      </ul>
+    </div>
 
+    <!-- Device History -->
+    <div class="panel panel-history">
+      <div class="panel-hdr">
+        <span class="panel-icon">📋</span>
+        <span class="panel-title">Device History</span>
+      </div>
+      <div class="table-wrap">
+        <table id="historyTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Manufacturer</th>
+              <th>Product</th>
+              <th>Vendor ID</th>
+              <th>Product ID</th>
+              <th>Serial</th>
+              <th>Type</th>
+              <th>Score</th>
+              <th>Risk</th>
+              <th>Decision</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
 </div>
-
-<p id="scanText">Waiting for device...</p>
-
-</div>
-
-</section>
-
-
-<!-- Alerts -->
-<section>
-
-<h2>Security Alerts</h2>
-
-<ul id="alertList"></ul>
-
-</section>
-
-</div>
-
 
 <script src="js/device_monitor.js"></script>
 <script src="js/scanning_ui.js"></script>
 <script src="js/alerts.js"></script>
-
 </body>
-
 </html>

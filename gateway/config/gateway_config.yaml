@@ -112,6 +112,25 @@ malware_scan:
   yara_rules_path: sandbox/yara_rules
 
 # -----------------------------------------------------
+# FILE FORWARDING SETTINGS
+# -----------------------------------------------------
+forwarding:
+
+  # "local" = copy to a local path (e.g. NFS/Samba share mounted here)
+  # "ssh"   = SCP clean files to host over network
+  mode: local
+
+  # Local destination (mount your host share here, e.g. via Samba/NFS)
+  local_dest: /home/glitch/usb_output
+
+  # SSH forwarding (used when mode: ssh)
+  ssh:
+    host_ip: ""
+    host_user: ""
+    host_dest: /home/user/usb_received/
+    ssh_key: /home/glitch/.ssh/id_rsa
+
+# -----------------------------------------------------
 # API SERVER SETTINGS
 # -----------------------------------------------------
 api_server:

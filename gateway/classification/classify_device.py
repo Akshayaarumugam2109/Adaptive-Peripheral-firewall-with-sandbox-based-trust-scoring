@@ -53,17 +53,15 @@ def classify_device(metadata, sysfs_data):
         interfaces = metadata.get("usb_interfaces")
 
         # Priority 1: sysfs hardware class
-        if device_class and device_class != "Unknown":
-
+        if device_class and device_class.lower() not in ("unknown", ""):
             logger.info(f"Classification via sysfs: {device_class}")
             return device_class.lower()
 
-        # Priority 2: interface descriptor
+        # Priority 2: interface descriptor (parse colon-delimited e.g. ":080650:")
         if interfaces:
-
+            iface_classes = [interfaces[i+1:i+3] for i in range(len(interfaces)) if interfaces[i] == ":" and i+3 <= len(interfaces)]
             for class_code, class_name in USB_CLASS_MAP.items():
-
-                if class_code in interfaces:
+                if class_code in iface_classes:
                     logger.info(f"Classification via interface: {class_name}")
                     return class_name.lower()
 

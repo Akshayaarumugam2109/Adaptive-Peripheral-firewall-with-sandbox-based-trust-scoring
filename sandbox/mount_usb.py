@@ -1,53 +1,44 @@
 #!/usr/bin/env python3
-"""
-USB Mount Module
-
-Safely mounts USB device in sandbox environment.
-
-Mount options:
-ro      ? read-only
-nosuid  ? ignore suid bits
-nodev   ? ignore device files
-noexec  ? prevent execution
-"""
 
 import os
+import re
 import subprocess
 import logging
 
-MOUNT_PATH = "/sandbox/usb_mount"
-
-logging.basicConfig(
-    filename="logs/gateway.log",
-    level=logging.INFO
-)
-
+logging.basicConfig(filename="logs/gateway.log", level=logging.INFO)
 logger = logging.getLogger("Sandbox-Mount")
+
+BASE_MOUNT = "/tmp/usb_gateway"
+
+
+def _mount_path(device_node):
+    # e.g. /dev/sda -> /tmp/usb_gateway/sda
+    safe = re.sub(r"[^a-zA-Z0-9]", "_", device_node.lstrip("/"))
+    return os.path.join(BASE_MOUNT, safe)
 
 
 def mount_usb(device_node):
-
+    path = _mount_path(device_node)
     try:
-
-        if not os.path.exists(MOUNT_PATH):
-            os.makedirs(MOUNT_PATH)
-
-        mount_cmd = [
-            "mount",
-            "-o",
-            "ro,nosuid,nodev,noexec",
-            device_node,
-            MOUNT_PATH
-        ]
-
-        subprocess.run(mount_cmd, check=True)
-
-        logger.info(f"USB mounted at {MOUNT_PATH}")
-
-        return MOUNT_PATH
-
-    except Exception as e:
-
-        logger.error(f"USB mount failed: {str(e)}")
-
+        os.makedirs(path, exist_ok=True)
+        subprocess.run(
+            ["mount", "-o", "ro,nosuid,nodev,noexec", device_node, path],
+            check=True, capture_output=True
+        )
+        logger.info(f"Mounted {device_node} at {path}")
+        return path
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Mount failed for {device_node}: {e.stderr.decode().strip()}")
         return None
+    except Exception as e:
+        logger.error(f"Mount error for {device_node}: {e}")
+        return None
+
+
+def unmount_usb(device_node):
+    path = _mount_path(device_node)
+    try:
+        subprocess.run(["umount", path], check=True, capture_output=True)
+        logger.info(f"Unmounted {path}")
+    except Exception as e:
+        logger.warning(f"Unmount warning for {device_node}: {e}")

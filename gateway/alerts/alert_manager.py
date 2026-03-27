@@ -84,13 +84,26 @@ def create_malware_alert(device_node, infected_files):
     )
 
 
-def create_suspicious_device_alert(device_node):
+def create_suspicious_device_alert(device_node, reasons=None):
     """
     Alert when suspicious firmware behavior is detected.
+    
+    Parameters:
+        device_node (str): The device path
+        reasons (list): List of reasons why device is suspicious
     """
+    
+    if reasons is None:
+        reasons = []
+    
+    # Format reasons into description
+    if reasons:
+        description = "Suspicious USB firmware behavior detected:\n  • " + "\n  • ".join(reasons)
+    else:
+        description = "Suspicious USB firmware behavior detected"
 
     return create_alert(
         "SUSPICIOUS_USB",
-        "Suspicious USB firmware behavior detected",
+        description,
         device_node
     )

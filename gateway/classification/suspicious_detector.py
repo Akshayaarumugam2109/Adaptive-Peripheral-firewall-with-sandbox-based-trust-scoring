@@ -32,7 +32,7 @@ def detect_suspicious(metadata, sysfs_data):
     Analyze device fingerprint for suspicious behavior.
 
     Returns:
-        True if suspicious
+        tuple: (suspicious: bool, reasons: list of strings explaining why)
     """
 
     try:
@@ -40,6 +40,7 @@ def detect_suspicious(metadata, sysfs_data):
         logger.info("Running suspicious device analysis")
 
         suspicious = False
+        reasons = []
 
         vendor_id = metadata.get("vendor_id")
         product_id = metadata.get("product_id")
@@ -48,30 +49,36 @@ def detect_suspicious(metadata, sysfs_data):
         interfaces = metadata.get("usb_interfaces")
         sysfs_class = sysfs_data.get("device_class")
 
-        # -------------------------------------
         # Rule 1: Missing vendor or product ID
-        # -------------------------------------
-        if not vendor_id or not product_id:
-
-            logger.warning("Missing vendor/product ID")
-            suspicious = True
+        # Skip this check for storage devices — they are identified by block device node
+        if sysfs_class and sysfs_class.lower() not in ("storage", "unknown", ""):
+            if not vendor_id or vendor_id == "unknown" or not product_id or product_id == "unknown":
+                reason = "Device is missing vendor ID or product ID in USB descriptor (potential firmware spoofing)"
+                logger.warning(reason)
+                reasons.append(reason)
+                suspicious = True
 
         # -------------------------------------
         # Rule 2: No serial number
+        # (skip if unknown — many valid devices omit serial)
         # -------------------------------------
-        if not serial:
-
-            logger.warning("Device has no serial number")
+        if serial and serial != "unknown" and len(serial.strip()) == 0:
+            reason = "Device has empty serial number field (indicates missing device identity)"
+            logger.warning(reason)
+            reasons.append(reason)
             suspicious = True
 
         # -------------------------------------
         # Rule 3: Descriptor mismatch
         # -------------------------------------
-        if interfaces and sysfs_class:
+        if interfaces and sysfs_class and sysfs_class.lower() not in ("unknown", ""):
+            # Parse interface classes from colon-delimited string e.g. ":080650:"
+            iface_classes = [interfaces[i+1:i+3] for i in range(len(interfaces)) if interfaces[i] == ":" and i+3 <= len(interfaces)]
 
-            if "08" in interfaces and sysfs_class.lower() != "storage":
-
-                logger.warning("Descriptor mismatch detected")
+            if "08" in iface_classes and sysfs_class.lower() != "storage":
+                reason = f"Descriptor mismatch: Device reports storage class (0x08) but kernel detected as {sysfs_class} (BadUSB signature)"
+                logger.warning(reason)
+                reasons.append(reason)
                 suspicious = True
 
         # -------------------------------------
@@ -83,29 +90,35 @@ def detect_suspicious(metadata, sysfs_data):
 
             if interface_count > 4:
 
-                logger.warning("Excessive interfaces detected")
+                reason = f"Excessive interfaces detected ({interface_count}): Device claims {interface_count + 1} different USB classes (composite device attack vector)"
+                logger.warning(reason)
+                reasons.append(reason)
                 suspicious = True
 
         # -------------------------------------
         # Rule 5: Fake HID attack
         # -------------------------------------
-        if interfaces and "03" in interfaces and sysfs_class != "HID":
+        if interfaces and sysfs_class and sysfs_class.lower() not in ("unknown", ""):
+            iface_classes = [interfaces[i+1:i+3] for i in range(len(interfaces)) if interfaces[i] == ":" and i+3 <= len(interfaces)]
 
-            logger.warning("Possible BadUSB HID attack")
-            suspicious = True
+            if "03" in iface_classes and sysfs_class.lower() != "hid":
+                reason = f"HID class mismatch: Device reports HID (0x03) interface but kernel detected as {sysfs_class} (BadUSB/rubber ducky attack signature)"
+                logger.warning(reason)
+                reasons.append(reason)
+                suspicious = True
 
         if suspicious:
 
-            logger.warning("Device marked as suspicious")
+            logger.warning(f"Device marked as suspicious with {len(reasons)} violations")
 
         else:
 
             logger.info("Device appears normal")
 
-        return suspicious
+        return suspicious, reasons
 
     except Exception as e:
 
         logger.error(f"Suspicious detection failed: {str(e)}")
 
-        return True
+        return True, [f"Detection error: {str(e)}"]

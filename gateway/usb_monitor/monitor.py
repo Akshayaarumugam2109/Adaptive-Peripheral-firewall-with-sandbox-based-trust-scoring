@@ -1,125 +1,157 @@
-"""
-USB Monitor Module
+#!/usr/bin/env python3
 
-Detects USB devices in real time using Linux udev.
-
-Triggers callback when a new device appears.
-
-Supports detection of:
-? USB storage devices
-? HID devices
-? composite USB devices
-
-Uses:
-pyudev
-"""
-
-import pyudev
-import logging
 import os
+import time
+import subprocess
+
+SKIP_VENDORS = {"1d6b", "2109", "0424", "05e3", "0bda", "1a40"}
+
+_serial_cache      = set()
+_serial_cache_time = 0.0
+_SERIAL_TTL        = 2.0
 
 
-# -----------------------------
-# Logging Setup
-# -----------------------------
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_PATH = os.path.join(BASE_DIR, "../../logs/gateway.log")
-
-os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
-
-logging.basicConfig(
-    filename=LOG_PATH,
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
-)
-
-logger = logging.getLogger("USB-Monitor")
-
-
-# -----------------------------
-# Extract Device Node
-# -----------------------------
-
-def extract_device_node(device):
-    """
-    Extract device node such as /dev/sdb
-    """
-
+def _read(path):
     try:
+        return open(path).read().strip()
+    except:
+        return ""
 
-        if device.device_node:
-            return device.device_node
 
-        for child in device.children:
-            if child.device_node:
-                return child.device_node
+def _get_storage():
+    """Return mountable partitions only (e.g. sda1, sdb1). Skip whole-disk nodes."""
+    devs = set()
+    try:
+        all_names = set(os.listdir("/dev"))
+        for name in all_names:
+            if not name.startswith("sd") or len(name) < 4:
+                continue
+            # Only partitions: sda1, sdb2 — skip bare sda, sdb
+            suffix = name[3:]
+            if not suffix.isdigit():
+                continue
+            # Skip if a higher partition of same disk exists (take lowest only)
+            disk = name[:3]
+            part_num = int(suffix)
+            # Use partition 1 of each disk (first partition is the data partition)
+            if part_num == 1 or not any(
+                n.startswith(disk) and n[3:].isdigit() and int(n[3:]) < part_num
+                for n in all_names
+            ):
+                devs.add("/dev/" + name)
+    except:
+        pass
+    return devs
 
-    except Exception as e:
 
-        logger.error(f"Device node extraction error: {str(e)}")
+def _get_storage_serials():
+    """Return set of vendor:product keys for all current storage devices (cached)."""
+    global _serial_cache, _serial_cache_time
+    now = time.monotonic()
+    if now - _serial_cache_time < _SERIAL_TTL:
+        return _serial_cache
+    keys = set()
+    for devname in _get_storage():
+        try:
+            out = subprocess.run(
+                ["udevadm", "info", "--query=property", "--name", devname],
+                capture_output=True, text=True, timeout=5
+            ).stdout
+            vid = ser = pid = ""
+            for line in out.splitlines():
+                if line.startswith("ID_VENDOR_ID="):  vid = line.split("=",1)[1]
+                if line.startswith("ID_MODEL_ID="):   pid = line.split("=",1)[1]
+                if line.startswith("ID_SERIAL="):     ser = line.split("=",1)[1]
+            key = ser if ser else f"{vid}:{pid}"
+            if key:
+                keys.add(key)
+        except:
+            pass
+    _serial_cache, _serial_cache_time = keys, now
+    return keys
 
-    return None
+
+def _get_usb():
+    """Return set of sysfs IDs for non-storage USB devices (HID, network, etc)."""
+    devs = set()
+    storage_keys = _get_storage_serials()
+    base = "/sys/bus/usb/devices"
+    try:
+        for name in os.listdir(base):
+            if ":" in name or name.startswith("usb"):
+                continue
+            path = os.path.join(base, name)
+            vendor = _read(os.path.join(path, "idVendor"))
+            if not vendor or vendor in SKIP_VENDORS:
+                continue
+            bclass = _read(os.path.join(path, "bDeviceClass"))
+            if bclass == "09":   # hub
+                continue
+            # Skip ALL storage-class devices — handled exclusively via /dev/sdX1
+            ifaces = _read(os.path.join(path, "bInterfaceClass"))
+            if ifaces == "08" or bclass == "08":
+                continue
+            # Also skip if any interface is storage
+            iface_str = ""
+            try:
+                for child in os.listdir(path):
+                    ic_path = os.path.join(path, child, "bInterfaceClass")
+                    if os.path.exists(ic_path):
+                        ic = _read(ic_path)
+                        if ic == "08":
+                            iface_str = "08"
+                            break
+            except:
+                pass
+            if iface_str == "08":
+                continue
+            serial = _read(os.path.join(path, "serial"))
+            pid    = _read(os.path.join(path, "idProduct"))
+            key    = serial if serial else f"{vendor}:{pid}"
+            if key and key in storage_keys:
+                continue
+            devs.add(name)
+    except:
+        pass
+    return devs
+
 
 def start_usb_monitor(callback):
-    """
-    Start real-time USB monitoring.
+    print("🔍 USB Monitor Started...")
 
-    callback(device_node)
-    """
+    prev_storage = _get_storage()
+    prev_usb     = _get_usb()
 
-    logger.info("Starting USB monitor")
+    print(f"   Storage at startup: {prev_storage}")
+    print(f"   USB at startup:     {prev_usb}")
 
-    context = pyudev.Context()
+    # Fire add for everything already connected at startup
+    for dev in prev_storage:
+        callback({"type": "storage", "device": dev, "action": "add"})
+    for dev in prev_usb:
+        callback({"type": "usb", "device": dev, "action": "add"})
 
-    monitor = pyudev.Monitor.from_netlink(context)
+    while True:
+        time.sleep(0.5)
 
-    monitor.filter_by(subsystem="usb")
-    monitor.filter_by(subsystem="block")
+        curr_storage = _get_storage()
+        curr_usb     = _get_usb()
 
-    monitor.start()
+        for dev in curr_storage - prev_storage:
+            print(f"\n💾 STORAGE ADD → {dev}")
+            callback({"type": "storage", "device": dev, "action": "add"})
 
-    logger.info("USB monitor running")
+        for dev in prev_storage - curr_storage:
+            print(f"\n🔴 STORAGE REMOVE → {dev}")
+            callback({"type": "storage", "device": dev, "action": "remove"})
 
-    for device in iter(monitor.poll, None):
+        for dev in curr_usb - prev_usb:
+            print(f"\n🔌 USB ADD → {dev}")
+            callback({"type": "usb", "device": dev, "action": "add"})
 
-        try:
+        for dev in prev_usb - curr_usb:
+            print(f"\n🔴 USB REMOVE → {dev}")
+            callback({"type": "usb", "device": dev, "action": "remove"})
 
-            handle_event(device.action, device, callback)
-
-        except Exception as e:
-
-            logger.error(f"Monitor loop error: {str(e)}")
-
-
-# -----------------------------
-# Handle USB Events
-# -----------------------------
-
-def handle_event(action, device, callback):
-    """
-    Handle udev events
-    """
-
-    try:
-
-        if action != "add":
-            return
-
-        logger.info(f"USB event detected: {device}")
-
-        device_node = extract_device_node(device)
-
-        if device_node:
-
-            logger.info(f"Device node detected: {device_node}")
-
-            callback(device_node)
-
-        else:
-
-            logger.warning("USB detected but device node not found")
-
-    except Exception as e:
-
-        logger.error(f"USB monitor error: {str(e)}")
+        prev_storage = curr_storage
+        prev_usb     = curr_usb
